@@ -19,8 +19,8 @@ interface ToolbarProps {
 const Toolbar = ({ searchQuery, setSearchQuery }: ToolbarProps) => {
   return (
     <div className="p-4 flex flex-wrap gap-3 w-full items-center border-b border-gray-200">
-      <div className="flex-1 flex flex-wrap gap-2 w-fit ">
-        <div className="relative w-[300px] sm:w-[350px]">
+      <div className="flex-1 flex flex-wrap gap-2 w-full sm:w-fit ">
+        <div className="relative w-full sm:w-[350px]">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
           <input
             type="text"
